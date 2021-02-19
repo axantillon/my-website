@@ -9,6 +9,9 @@
   "dependencies": {
     "@mdi/font": "^5.9.55",
     "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "lodash": "^4.17.20",
+    "node-fetch": "^2.6.1",
     "tailwindcss-border-gradients": "^2.0.3",
     "vue": "^3.0.5"
   },

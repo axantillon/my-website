@@ -13,7 +13,7 @@ import socialMediaLinks from "./components/socialMediaLinks.vue"
 import answeringMachine from "./components/answeringMachine.vue"
 import researchPaperShowcase from "./components/researchPaperShowcase.vue"
 
-import { getContributionsMonthly } from "./utils/github_contribution"
+import { fetchDataForAllYears } from "./utils/github_contribution"
 
 export default{
 
@@ -32,7 +32,7 @@ export default{
   mounted() {
     var body = document.body
     body.classList.add(`bg-${this.colors[Math.floor(Math.random() * this.colors.length)]}-50`)
-    console.log(getContributionsMonthly())
+    console.log(fetchDataForAllYears("andantillon", "nested"))
   }
 }
 
