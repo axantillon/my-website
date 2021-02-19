@@ -1,0 +1,24 @@
+{
+  "name": "my-website",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^5.9.55",
+    "axios": "^0.21.1",
+    "tailwindcss-border-gradients": "^2.0.3",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "vite": "^2.0.0-beta.70"
+  }
+}
