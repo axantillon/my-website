@@ -1,9 +1,9 @@
 <template>
   <div class="block mx-24 my-24 space-y-8">
-    <!-- <profile-card/>
+    <profile-card/>
     <answering-machine/>
     <social-media-links/> 
-    <research-paper-showcase/> -->
+    <research-paper-showcase/>
   </div>
 </template>
 
@@ -34,7 +34,6 @@ export default{
   mounted() {
     var body = document.body
     body.classList.add(`bg-${this.colors[Math.floor(Math.random() * this.colors.length)]}-50`)
-    console.log("hello")
   }
 }
 

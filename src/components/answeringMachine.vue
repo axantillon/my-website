@@ -12,6 +12,8 @@
         class="bg-gray-100 block mx-auto w-3/4 h-12 text-center text-2xl shadow-md rounded-2xl 
         focus:outline-none focus:ring-1 focus:ring-grey-100 focus:border-transparent
         transition transform ease-in duration-300 hover:scale-110 focus:scale-110">
+
+        <p> {{ test }} </p>
       
     </div>
 </template>
@@ -26,6 +28,12 @@ export default {
         question: "",
         loading: false,
     }),
+
+    computed: {
+        test(){
+            return JSON.stringify(axios.get("https://github-contributions.now.sh/api/v1/andantillon"))
+        }
+    },
 
     methods: {
 
