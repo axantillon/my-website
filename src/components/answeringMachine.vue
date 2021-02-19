@@ -31,7 +31,7 @@ export default {
 
     computed: {
         test(){
-            return JSON.stringify(axios.get("https://github-contributions.now.sh/api/v1/andantillon"))
+            return //JSON.stringify(axios.get("https://github-contributions.now.sh/api/v1/andantillon"))
         }
     },
 

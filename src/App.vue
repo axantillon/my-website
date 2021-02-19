@@ -13,7 +13,7 @@ import socialMediaLinks from "./components/socialMediaLinks.vue"
 import answeringMachine from "./components/answeringMachine.vue"
 import researchPaperShowcase from "./components/researchPaperShowcase.vue"
 
-//import axios from "axios"
+import axios from "axios"
 
 //import { fetchDataForAllYears } from "./utils/github_contribution"
 
@@ -34,6 +34,18 @@ export default{
   mounted() {
     var body = document.body
     body.classList.add(`bg-${this.colors[Math.floor(Math.random() * this.colors.length)]}-50`)
+    this.test()
+  },
+
+  methods: {
+    async test() {
+      await axios.get("https://www.github.com/andantillon", {
+        headers: {
+        }
+      }).then((response) => {
+        console.log(response)
+      })
+    }
   }
 }
 
