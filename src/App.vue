@@ -13,7 +13,7 @@ import socialMediaLinks from "./components/socialMediaLinks.vue"
 import answeringMachine from "./components/answeringMachine.vue"
 import researchPaperShowcase from "./components/researchPaperShowcase.vue"
 
-import axios from "axios"
+//import axios from "axios"
 
 //import { fetchDataForAllYears } from "./utils/github_contribution"
 
