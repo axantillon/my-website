@@ -15,7 +15,7 @@ import researchPaperShowcase from "./components/researchPaperShowcase.vue"
 
 import axios from "axios"
 
-import { fetchDataForAllYears } from "./utils/github_contribution"
+//import { fetchDataForAllYears } from "./utils/github_contribution"
 
 export default{
 
