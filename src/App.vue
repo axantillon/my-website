@@ -13,6 +13,8 @@ import socialMediaLinks from "./components/socialMediaLinks.vue"
 import answeringMachine from "./components/answeringMachine.vue"
 import researchPaperShowcase from "./components/researchPaperShowcase.vue"
 
+import axios from "axios"
+
 import { fetchDataForAllYears } from "./utils/github_contribution"
 
 export default{
@@ -32,7 +34,7 @@ export default{
   mounted() {
     var body = document.body
     body.classList.add(`bg-${this.colors[Math.floor(Math.random() * this.colors.length)]}-50`)
-    console.log(fetchDataForAllYears("andantillon", "nested"))
+    console.log(axios.get("https://github-contributions.now.sh/api/v1/andantillon"))
   }
 }
 
