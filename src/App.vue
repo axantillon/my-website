@@ -34,7 +34,7 @@ export default{
   mounted() {
     var body = document.body
     body.classList.add(`bg-${this.colors[Math.floor(Math.random() * this.colors.length)]}-50`)
-    console.log(axios.get("https://github-contributions.now.sh/api/v1/andantillon"))
+    console.log("hello")
   }
 }
 
