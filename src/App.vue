@@ -1,10 +1,16 @@
 <template>
-  <div class="block mx-24 my-24 space-y-8">
-    <profile-card/>
-    <answering-machine/>
-    <social-media-links/> 
-    <research-paper-showcase/>
-  </div>
+  <div class="">
+    
+    <nav-bar :text_color="random"/>
+
+    <div class="block mx-24 space-y-8">
+      <profile-card/>
+      <social-media-links/>
+      <research-paper-showcase/>
+    </div>
+
+</div>
+  
 </template>
 
 <script>
@@ -12,10 +18,8 @@ import profileCard from "./components/profileCard.vue"
 import socialMediaLinks from "./components/socialMediaLinks.vue"
 import answeringMachine from "./components/answeringMachine.vue"
 import researchPaperShowcase from "./components/researchPaperShowcase.vue"
+import navBar from "./components/navBar.vue"
 
-import axios from "axios"
-
-//import { fetchDataForAllYears } from "./utils/github_contribution"
 
 export default{
 
@@ -23,29 +27,27 @@ export default{
     profileCard,
     socialMediaLinks,
     answeringMachine,
-    researchPaperShowcase
+    researchPaperShowcase,
+    navBar
   },
 
   data: () => ({
-    colors: ["grey", "red", "green", "blue", "indigo", "purple", "pink"],
-    background_color: "bg-grey-50"
+    colors: ["red", "blue", "indigo", "purple", "pink"],
   }),
 
   mounted() {
-    var body = document.body
-    body.classList.add(`bg-${this.colors[Math.floor(Math.random() * this.colors.length)]}-50`)
-    this.test()
+    var body = document.body 
+    body.classList.add(`bg-${this.random}-50`)
+  },
+
+  computed: {
+    random() {
+      return this.colors[Math.floor(Math.random() * this.colors.length)]
+    }
   },
 
   methods: {
-    async test() {
-      await axios.get("https://www.github.com/andantillon", {
-        headers: {
-        }
-      }).then((response) => {
-        console.log(response)
-      })
-    }
+    
   }
 }
 

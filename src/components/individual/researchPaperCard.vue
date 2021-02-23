@@ -15,7 +15,7 @@
                 <p class="text-lg font-light"> {{ paper_description }} </p>
             </div>
 
-            <button v-bind:class= "[border_color, text_color, bg_color]" class="blog_button rounded-full text-2xl px-6 py-3 border hover:border-transparent hover:text-white
+            <button v-bind:class="[border_color, text_color, bg_color]" class="blog_button rounded-full text-2xl px-6 py-3 border hover:border-transparent hover:text-white
                                             transform-gpu transition ease-in duration-300 hover:scale-105"> 
             <a :href="blog_link" target="_blank"> {{ btn_text }} </a></button>
         </div>
