@@ -2,7 +2,7 @@
     <div class="px-4 sm:px-12">
       <div class="relative flex items-center between h-32">
         <div class="bg-white px-4 py-2 rounded-2xl shadow-lg">
-            <p :class="'text-' + text_color + '-500'" class="text-lg">
+            <p class="text-lg">
                 Andres Antillon
             </p>
         </div>
@@ -16,16 +16,7 @@
 </template>
 
 <script>
-import { computed } from 'vue'
 export default {
-    props: [
-        'text_color'
-    ],
 
-    computed: {
-        // color_class() {
-        //     return "text-${this.text_color}"
-        // }
-    }
 }
 </script>

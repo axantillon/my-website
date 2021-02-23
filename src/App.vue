@@ -1,12 +1,23 @@
 <template>
   <div class="">
     
-    <nav-bar :text_color="random"/>
+    <nav-bar/>
 
-    <div class="block mx-24 space-y-8">
+    <div class="block mx-24 space-y-14">
       <profile-card/>
-      <social-media-links/>
-      <research-paper-showcase/>
+      <div class="space-y-4">
+        <h1 class="text-4xl text-semibold text-center text-gray-500">
+          Social Media
+        </h1>
+        <social-media-links/>
+      </div>
+      
+      <div class="space-y-4">
+        <h1 class="text-4xl text-semibold text-center text-gray-500">
+          Research
+        </h1>
+        <research-paper-showcase/>
+      </div>
     </div>
 
 </div>
@@ -32,18 +43,9 @@ export default{
   },
 
   data: () => ({
-    colors: ["red", "blue", "indigo", "purple", "pink"],
   }),
 
   mounted() {
-    var body = document.body 
-    body.classList.add(`bg-${this.random}-50`)
-  },
-
-  computed: {
-    random() {
-      return this.colors[Math.floor(Math.random() * this.colors.length)]
-    }
   },
 
   methods: {

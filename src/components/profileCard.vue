@@ -3,10 +3,16 @@
         <img class="block rounded-full max-h-48 mx-8 my-8 border-transparent"
             src="../assets/pp.jpg" alt="Profile Picture"
         >
-        <div class="text-left space-y-6">
-            <p class="text-2xl text-bold font-bold">
-                Hello There!... 👋
-            </p>
+        <div class="text-left space-y-4">
+            <div class="space-y-1">
+                <p class="text-3xl text-semibold font-semibold">
+                    Hello There!... 👋
+                </p>
+                <p class="text-2xl text-light"> 
+                    My name is <b class="text-blue-400"> Andres Antillon </b>
+                </p>
+            </div>
+           
             <p class="text-lg text-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra feugiat tellus sit amet sollicitudin. 
                 Donec blandit nibh pretium, accumsan magna id, sagittis justo. 
