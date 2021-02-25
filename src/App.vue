@@ -3,13 +3,19 @@
     
     <nav-bar/>
 
-    <div class="block mx-24 space-y-14">
+    <div class="block mx-24 space-y-44">
+
       <profile-card/>
+
       <div class="space-y-4">
         <h1 class="text-4xl text-semibold text-center text-gray-500">
           Social Media
         </h1>
         <social-media-links/>
+      </div>
+
+      <div class="">
+        <github-dashboard/>
       </div>
       
       <div class="space-y-4">
@@ -18,6 +24,7 @@
         </h1>
         <research-paper-showcase/>
       </div>
+
     </div>
 
 </div>
@@ -30,6 +37,7 @@ import socialMediaLinks from "./components/socialMediaLinks.vue"
 import answeringMachine from "./components/answeringMachine.vue"
 import researchPaperShowcase from "./components/researchPaperShowcase.vue"
 import navBar from "./components/navBar.vue"
+import githubDashboard from "./components/githubDashboard.vue"
 
 
 export default{
@@ -39,13 +47,14 @@ export default{
     socialMediaLinks,
     answeringMachine,
     researchPaperShowcase,
-    navBar
+    navBar,
+    githubDashboard,
   },
 
   data: () => ({
   }),
 
-  mounted() {
+  mounted() { 
   },
 
   methods: {
