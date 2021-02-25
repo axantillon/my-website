@@ -1,6 +1,7 @@
 import axios from "axios"
 
-const authToken = import.meta.env.VITE_GITHUB_TOKEN
+// API TOKEN IS PUBLIC, PLEASE DON'T ABUSE. IT'S PERMISSIONS ARE READ ONLY. NO ACCESS TO PRIVATE REPOS
+const authToken = "179dd95d33ce4f7e483cca6d0d5f2d9f806c73ea"
 
 export async function getGithubData(){
     var response = await axios.get("https://api.github.com/users/andantillon/repos", {
