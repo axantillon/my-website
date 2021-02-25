@@ -3,7 +3,7 @@
     
     <nav-bar/>
 
-    <div class="block mx-24 space-y-44">
+    <div class="block mx-24 my-24 space-y-48">
 
       <profile-card/>
 
