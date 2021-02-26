@@ -2,7 +2,7 @@
     <div class="bg-white w-full shadow-md rounded-xl p-10 space-y-6">
         <div class="relative flex items-center p4">
             <div class="text-2xl font-semibold">
-                <p> 📘 Github Contributions</p>
+                <p> 📘 GitHub Contributions</p>
             </div>
             <div class="absolute right-0">
                 <select v-model="selected" class="" @change="this.redrawGraph()">

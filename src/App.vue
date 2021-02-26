@@ -7,14 +7,17 @@
 
       <profile-card/>
 
-      <div class="space-y-4">
+      <div class="space-y-10">
         <h1 class="text-4xl text-semibold text-center text-gray-500">
           Social Media
         </h1>
         <social-media-links/>
       </div>
 
-      <div class="">
+      <div class="space-y-4">
+        <h1 class="text-4xl text-semibold text-center text-gray-500">
+          GitHub
+        </h1>
         <github-dashboard/>
       </div>
       

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-wrap items-center ">
+    <div class="flex items-center justify-center ">
 
         <!-- Twitter -->
         <socialCard
