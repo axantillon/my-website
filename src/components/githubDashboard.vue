@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col xl:flex-row xl:items-center">
-        <div class="w-2/3 mx-auto xl:flex-grow xl:order-last xl:w-1/3">
+    <div class="flex flex-col xl:flex-row xl:items-cente">
+        <div class="w-2/3 mx-auto flex justify-center xl:flex-grow xl:order-last xl:w-1/3">
             <github-graph/>
         </div>
         <div class="flex flex-row items-center justify-center flex-wrap flex-none xl:w-2/3">

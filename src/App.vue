@@ -7,7 +7,7 @@
 
       <profile-card/>
 
-      <div class="space-y-10">
+      <div class="space-y-20">
         <h1 class="text-4xl text-semibold text-center text-gray-500">
           Social Media
         </h1>

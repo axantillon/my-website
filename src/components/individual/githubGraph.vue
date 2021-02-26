@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-white w-full shadow-md rounded-xl p-10 space-y-6">
+    <div class="bg-white w-max shadow-md rounded-xl p-10 space-y-6">
         <div class="relative flex items-center p4">
-            <div class="text-2xl font-semibold">
+            <div class="text-2xl font-semibold pr-24">
                 <p> 📘 GitHub Contributions</p>
             </div>
             <div class="absolute right-0">

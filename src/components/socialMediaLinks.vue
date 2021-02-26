@@ -1,6 +1,5 @@
 <template>
-    <div class="flex items-center justify-center ">
-
+    <div class="flex flex-col lg:flex-row flex-wrap items-center justify-between space-y-20 lg:space-y-0">
         <!-- Twitter -->
         <socialCard
             platform="Twitter"
@@ -24,7 +23,7 @@
             hover_bg="bg-gradient-to-r hover:from-yellow-300 hover:via-red-400 hover:to-pink-400"
             hover_text="hover:text-white"
         />
-        
+
         <!-- Photography -->
         <socialCard
             platform="Photography"
@@ -48,8 +47,7 @@
             hover_bg=" hover:bg-yellow-400"
             hover_text="hover:text-white"
         />
-    </div>
-    
+    </div>    
 </template>
 
 <script>
