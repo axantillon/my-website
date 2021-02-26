@@ -1,6 +1,9 @@
 <template>
-    <div class="flex items-center">
-        <div class="flex flex-row items-center flex-wrap">
+    <div class="flex flex-col xl:flex-row xl:items-center">
+        <div class="w-2/3 mx-auto xl:flex-grow xl:order-last xl:w-1/3">
+            <github-graph/>
+        </div>
+        <div class="flex flex-row items-center justify-center flex-wrap flex-none xl:w-2/3">
             <github-repo
                 v-for="repo in repos" :key="repo.name"
                 :name="repo.name"
@@ -10,9 +13,7 @@
                 :language="repo.language"
             />
         </div>
-        <div class="w-1/3">
-            <github-graph/>
-        </div>
+        
     </div>
 </template>
 

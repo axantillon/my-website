@@ -16,7 +16,7 @@ export async function getGithubData(){
 
     for(var i=0; i<4; i++){
         data.push({
-            name: response[i].full_name,
+            name: response[i].full_name.replace(/_/g, "-"),
             url: response[i].html_url,
             stars: response[i].stargazers_count,
             language: response[i].language
