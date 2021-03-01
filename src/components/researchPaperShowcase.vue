@@ -14,7 +14,7 @@
         <research-paper-card
             paper_name="The Effectiveness and Transferability of Adversarial Machine Learning"
             paper_description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra feugiat tellus sit amet sollicitudin."
-            embed_link="https://drive.google.com/file/d/12aSkF8bYWQJvv5lArKOORXvD1VBZQNQP/preview"
+            embed_link="https://drive.google.com/file/d/1bp450-VwHza_vkisFc92lUCISrbN9Dy7/preview"
         />
 
     </div>
