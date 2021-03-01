@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white p-10 max-w-4xl mx-auto rounded-3xl shadow-2xl flex items-center space-x-5">
         <img class="block rounded-full max-h-48 m-8 border-transparent"
-            src="../assets/pp2.jpg" alt="Profile Picture"
+            src="../assets/pp.jpg" alt="Profile Picture"
         >
         <div class="text-left space-y-4">
             <div class="space-y-1">
