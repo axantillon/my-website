@@ -1,16 +1,16 @@
 <template>
-    <div class="bg-white m-6 w-96 xl:w-5/12 h-32 p-10 shadow-md rounded-lg">
+    <a :href="url" target="_blank" class="group bg-white m-6 w-96 xl:w-5/12 h-32 p-10 shadow-md rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:-skew-x-1">
         <div class="relative flex items-center space-x-4">
             <img class="w-10 h-10" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNS40OTUgMmgxNi41MDV2LTJoLTE3Yy0xLjY1NiAwLTMgMS4zNDMtMyAzdjE4YzAgMS42NTcgMS4zNDQgMyAzIDNoMTd2LTIwaC0xNi41MDVjLTEuMzc2IDAtMS4zNzYtMiAwLTJ6bS41MDUgNGg3djdsMi0yIDIgMnYtN2gzdjE2aC0xNHYtMTZ6Ii8+PC9zdmc+">
             <div class="space-y-1">
-                <a :href="url" target="_blank" class="hover:text-blue-600">
-                    <p class="text-lg font-semibold leading-none pr-9">
+                    <p class="text-lg font-semibold leading-none pr-9 group-hover:text-blue-600">
                         {{name}}
                     </p>
-                </a>
                 <div class="flex items-center space-x-2">
-                    <div :class="langColor" class="h-2 w-2 rounded-full inline-block bg-gray-600">
-                    </div>
+                    <span class="flex items-center justify-center h-2 w-2">
+                        <span :class="langColor" class="absolute inline-flex h-4 w-4 animate-none group-hover:animate-ping group-hover:h-12 group-hover:w-12 rounded-full bg-gray-600 opacity-0 group-hover:opacity-75"></span>
+                        <span :class="langColor" class="relative inline-flex rounded-full h-full w-full bg-gray-600"></span>
+                    </span>
                     <p class="text-sm">
                         {{ language }}  
                     </p>
@@ -21,7 +21,7 @@
                 <p class="text-lg "> {{stars}} </p>
             </div>
         </div>
-    </div>
+    </a>
 </template>
 
 <script>
