@@ -21,12 +21,12 @@
         <github-dashboard/>
       </div>
       
-      <div class="space-y-4">
+      <!-- <div class="space-y-4">
         <h1 class="text-4xl text-semibold text-center text-gray-500">
           Research
         </h1>
         <research-paper-showcase/>
-      </div>
+      </div> -->
 
     </div>
 
