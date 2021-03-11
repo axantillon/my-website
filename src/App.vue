@@ -3,9 +3,11 @@
     
     <nav-bar/>
 
-    <div class="block mx-24 my-24 space-y-52">
+    <div class="block my-4 space-y-16 sm:mx-24 sm:my-24 sm:space-y-32">
 
       <profile-card/>
+
+      <answering-machine/>
 
       <div class="space-y-20">
         <h1 class="text-4xl text-semibold text-center text-gray-500">

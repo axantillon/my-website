@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white w-3/4 h-5/6 shadow-md rounded-xl p-10 space-y-6">
+    <div class="bg-white shadow-md rounded-xl w-5/6 sm:w-3/4 sm:h-5/6 p-10 space-y-6">
         <div class="relative flex items-center p4">
             <div class="text-xl font-semibold pr-24">
                 <p> 📘 GitHub Contributions</p>

@@ -27,11 +27,7 @@ module.exports = {
     }
   },
 
-  variants: {
-    extend: {
-      animation: ['group-hover']
-    },
-  },
+  variants: ['responsive', 'hover', 'focus', 'group-hover', 'disabled', 'active', 'group-hover'],
   
   plugins: [
     require('tailwindcss-border-gradients')(),
