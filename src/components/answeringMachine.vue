@@ -1,25 +1,43 @@
 <template>
     <div class="bg-white relative rounded-2xl shadow-xl mx-auto p-8 w-5/6 sm:max-w-xl">
         <div class="space-y-8 mb-8">
+            <!-- Title -->
             <div class="text-2xl">
                 <p>
                     ✏ Ask Me Anything! 
                 </p>
             </div>
 
+            <!-- Input Section -->
             <div class="flex space-x-4 justify-center items-center">
                 <input v-model="question" type="text" :placeholder="sampleQ"
                     class="w-1/2 text-lg text-center select-text placeholder-gray-500 placeholder-opacity-75 shadow-sm rounded-lg py-2 px-4 border border-gray-300 border-opacity-75
                         focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
 
-                <button @click="askQ()" class="text-center text-xl font-bold rounded-2xl py-2 px-8 text-blue-400 border-2 border-blue-300 
-                            transition duration-500 ease-in-out  hover:border-transparent hover:bg-blue-500 hover:text-white hover:shadow-lg focus:outline-none
-                            active:bg-blue-800 active:duration-100"> 
-                    ?
-                </button>
+                <!-- Submit Button -->
+                <div class="group relative">
+                    <button @click="askQ()"
+                            v-bind:class="{'text-red-400': !available, 'border-red-300': !available, 'hover:bg-red-500': !available, 'active:bg-red-800': !available,
+                                            'text-blue-400': available, 'border-blue-400': available, 'hover:bg-blue-500': available, 'active:bg-blue-800': available}"
+                            class="text-center text-xl font-bold rounded-2xl py-2 px-8 border-2
+                                    transition duration-500 ease-in-out  hover:border-transparent hover:text-white hover:shadow-lg focus:outline-none
+                                    active:duration-100"
+                    > 
+                        <p> ? </p>
+                        
+                    </button>
+                    
+                    <!-- Conditional Div that renders if the HuggingFace API isn't available -->
+                    <div v-if="!available" class="invisible group-hover:visible absolute -right-28 -top-4 p-1 text-xs text-white rounded-md border-2 border-transparent bg-red-400">
+                        <span class=""> API Isn't available <br> Hold on a sec 🛠 </span>
+                    </div>
+
+                </div>
+                
             </div>
 
-            <div class="flex justify-center items-center p-1">
+            <!-- Div to Display result from NLP model -->
+            <div class="flex justify-center items-center">
 
                 <p class="text-2xl font-semibold text-indigo-500">
                     {{ answer }}
@@ -28,7 +46,7 @@
             </div>
         </div>
         
-
+        <!-- Little snippet to redirect to orginal repo. Completely optional to include -->
         <div class="absolute bottom-0 right-0">
             <a href="">
                 <button class="m-4 p-2 flex space-x-2 rounded-xl transition duration-500 ease-in-out border-transparent focus:outline-none hover:bg-gray-100 
@@ -47,34 +65,58 @@
 import { getAnswer } from "../utils/bertAPI"
 
 export default {
-    data: () => ({
-        description: "My name is Andres. I grew up in Costa Rica. I was born in 2002. I'm 19 years old.",
+    data: () => ({  
+        //sample Qs to populate the Input Field
         samples: [
             "Where did you grow up?",
             "How old are you?",
-            "What's your background?",
+            "What are your passions?",
             "When were you born?",
-            "What's your name?"
-        ],
+            ],
         answer: "",
         question: "",
-        loading: false,
+        available: false,
+        API_checker: null,
     }),
 
+    //computed Variable to populate the Input Field
     computed: {
         sampleQ() {
             return this.samples[Math.floor(Math.random() * this.samples.length)];
-        }
+        },
+    },
+
+    //automatically run a checker to wake up API
+    mounted() {
+        this.checkAPI_Interval();
     },
 
     methods: {
-
+        //query the api with the helper function from ./bertAPI.js
         askQ(){
             var question = this.question.replace("?", "")
             getAnswer(question).then((res) => {
                 console.log(res.data)
                 this.answer = res.data.answer
                 this.loading = false
+            })
+        },
+
+        //run a test query on API every 5 seconds
+        checkAPI_Interval(){
+            this.checkAPI
+            this.API_checker = setInterval(()=>{
+                this.checkAPI()
+            }, 5000)
+        },
+
+        //query the API, if succesful indicate the component throug this.available and clear the Interval(), else keep running
+        checkAPI(){
+            getAnswer("h").then((res) => {
+                this.available = true;
+                clearInterval(this.API_checker)
+            }).catch((err) => {
+                this.available = false;
             })
         }
     }
