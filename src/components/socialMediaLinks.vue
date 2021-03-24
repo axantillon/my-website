@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col lg:flex-row flex-wrap items-center justify-between space-y-10 sm:space-y-20 lg:space-y-0">
+    <div class="flex flex-col lg:flex-row flex-wrap items-center justify-between space-y-10 sm:space-y-20 lg:space-y-0">    
         <!-- Twitter -->
         <socialCard
             platform="Twitter"

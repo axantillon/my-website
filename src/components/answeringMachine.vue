@@ -29,7 +29,7 @@
                     
                     <!-- Conditional Div that renders if the HuggingFace API isn't available -->
                     <div v-if="!available" class="invisible group-hover:visible absolute -right-28 -top-4 p-1 text-xs text-white rounded-md border-2 border-transparent bg-red-400">
-                        <span class=""> API Isn't available <br> Hold on a sec 🛠 </span>
+                        <span class=""> API isn't available <br> Hold on a sec 🛠 </span>
                     </div>
 
                 </div>
