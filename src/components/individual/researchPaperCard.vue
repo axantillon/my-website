@@ -19,7 +19,7 @@
         <iframe class="mx-auto my-2 hidden lg:block" :src="embed_link" width="180" height="240"></iframe>
         
         <div class="lg:h-52 px-8 flex items-center">
-            <p class="text-sm sm:text-md font-light"> {{ paper_description }} </p>
+            <p class="text-sm sm:text-md lg:text-lg font-light"> {{ paper_description }} </p>
         </div>
 
         <div class="flex justify-center">
