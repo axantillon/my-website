@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-white lg:items-center lg:text-center mx-6 shadow-xl rounded-3xl lg:w-1/3 2xl:w-1/4 px-4 py-6 space-y-4">
+    <div class="bg-white lg:items-center lg:text-center mx-6 shadow-xl rounded-3xl lg:w-1/3 2xl:w-1/4 px-4 py-6 space-y-4 lg:space-y-10">
 
-        <div class="py-2 lg:py-8 px-8 lg:h-28 flex items-center space-x-4 lg:space-x-0">
+        <div class="py-2 lg:py-10 px-8 lg:h-16 flex items-center space-x-4 lg:space-x-0">
             <img class="lg:hidden w-14 h-14" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTEuMzYzIDJjNC4xNTUgMCAyLjYzNyA2IDIuNjM3IDZzNi0xLjY1IDYgMi40NTd2MTEuNTQzaC0xNnYtMjBoNy4zNjN6bS44MjYtMmgtMTAuMTg5djI0aDIwdi0xNC4zODZjMC0yLjM5MS02LjY0OC05LjYxNC05LjgxMS05LjYxNHptNC44MTEgMTNoLTIuNjI4djMuNjg2aC45MDd2LTEuNDcyaDEuNDl2LS43MzJoLTEuNDl2LS42OThoMS43MjF2LS43ODR6bS00LjkgMGgtMS41OTl2My42ODZoMS41OTljLjUzNyAwIC45NjEtLjE4MSAxLjI2Mi0uNTM1LjU1NS0uNjU4LjU4Ny0yLjAzNC0uMDYyLTIuNjkyLS4yOTgtLjMtLjcxMi0uNDU5LTEuMi0uNDU5em0tLjY5Mi43ODNoLjQ5NmMuNDczIDAgLjgwMi4xNzMuOTE1LjY0NC4wNjQuMjY3LjA3Ny42NzktLjAyMS45NDgtLjEyOC4zNTEtLjM4MS41MjgtLjc1NC41MjhoLS42Mzd2LTIuMTJ6bS0yLjc0LS43ODNoLTEuNjY4djMuNjg2aC45MDd2LTEuMjc3aC43NjFjLjYxOSAwIDEuMDY0LS4yNzcgMS4yMjQtLjc2My4wOTUtLjI5MS4wOTUtLjU5NyAwLS44ODUtLjE2LS40ODQtLjYwNi0uNzYxLTEuMjI0LS43NjF6bS0uNzYxLjczMmguNTQ2Yy4yMzUgMCAuNDY3LjAyOC41NzYuMjI4LjA2Ny4xMjMuMDY3LjM2NiAwIC40ODktLjEwOS4xOTktLjM0MS4yMjctLjU3Ni4yMjdoLS41NDZ2LS45NDR6Ii8+PC9zdmc+">
             <div class="space-y-1">    
                 <p class=" text-lg text-bold font-bold">
