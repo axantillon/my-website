@@ -6,11 +6,11 @@
                 Andres Antillon
             </p>
         </div>
-        <div class="absolute right-0">
+        <!-- <div class="absolute right-0">
             <button class="bg-white rounded-full p-4 shadow-lg">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
             </button>
-        </div>
+        </div> -->
       </div>
     </div>
 </template>
