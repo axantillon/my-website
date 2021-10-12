@@ -13,7 +13,7 @@
     "cheerio": "^1.0.0-rc.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "node-fetch": "^2.6.1",
     "tailwindcss-border-gradients": "^2.0.3",
     "vue": "^3.0.5"
